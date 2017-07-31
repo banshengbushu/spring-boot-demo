@@ -30,10 +30,12 @@ $(document).ready(function () {
 
 
     $(".icon").on("blur",function () {
+        console.log('blur')
         $(".fa-pencil").hide();
     })
 
     $(".icon").on("focus",function () {
+        console.log('focus')
         $(".fa-pencil").show();
     });
 

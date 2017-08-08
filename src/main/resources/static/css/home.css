@@ -49,7 +49,7 @@ body {
 }
 
 .first-page .home {
-    background-image: url("../images/home.jpg");
+    background-image: url("../../static/images/home.jpg");
     background-repeat: no-repeat;
     width: 100%;
     height: 890px;
@@ -337,7 +337,7 @@ i.fa.fa-users, i.fa.fa-twitter, i.fa.fa-tag, i.fa.fa-facebook {
 
 .first-page .page-bottom {
     text-align: center;
-    background-image: url("../images/footer.jpg");
+    background-image: url("../../static/images/footer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: red;
@@ -348,8 +348,8 @@ i.fa.fa-users, i.fa.fa-twitter, i.fa.fa-tag, i.fa.fa-facebook {
 .page-bottom .bottom-search {
     display: table-cell;
     vertical-align: middle;
-    height: 220px;
-    width: 1440px;
+    line-height: 120px;
+    padding-left: 500px;
 }
 
 .bottom-search h2, .bottom-search .home-search {

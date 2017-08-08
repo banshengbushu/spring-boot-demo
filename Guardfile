@@ -3,7 +3,7 @@
 
 guard 'livereload' do
   watch('index.html')
-  watch(%r{stylesheets/.+\.(css)})
+  watch(%r{stylesheets/.+\.(sass)})
   watch(%r{scripts/.+\.(js)})
 end
 

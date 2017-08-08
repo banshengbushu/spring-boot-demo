@@ -1,0 +1,72 @@
+body {
+  font-size: 90%;
+  .annulus {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    line-height: 100px;
+
+    .annulus-inside {
+      right: 0;
+      top: 0;
+      position: absolute;
+      border: 10px solid #09c;
+      bottom: 0;
+      left: 0;
+      border-radius: 50%;
+      clip: rect(auto, 50px, auto, auto);
+      transform: rotate(90deg);
+
+      -webkit-animation-name: circle_right; /* 动画名称 */
+      -webkit-animation-duration: 1s; /* 完成一个动画需要的时间 */
+      -webkit-animation-timing-function: ease; /* 动画播放的方式，linear是匀速变化 */
+      -webkit-animation-iteration-count: infinite; /* 动画播放的次数，infinite是无限次数 */
+
+      @-webkit-keyframes circle_right {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(90deg);
+        }
+      }
+
+    }
+
+    .annulus-text {
+      color: #09c;
+      strong {
+        font-size: 10px;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .annulus::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 10px solid #9cf;
+    border-radius: 50%;
+  }
+
+  .annulus::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 10px solid #9cf;
+    border-radius: 50%;
+    clip: rect(auto, 50px, auto, auto);
+  }
+}
+
+

@@ -11,12 +11,12 @@ public class ItemsController {
 
     @RequestMapping("/")
     public String index(@RequestParam(value = "str", defaultValue = "Hello World") String str) {
-        return "static/index.html";
+        return "templates/index.html";
     }
 
     @RequestMapping("/handleBars")
     public String handleBars() {
-        return "static/handleBars.html";
+        return "templates/handleBars.html";
     }
 
     @RequestMapping(value = "/items", method = RequestMethod.GET)

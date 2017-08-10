@@ -1,0 +1,10 @@
+body {
+  font-size: 79%; }
+  body .chat-header {
+    display: inline; }
+    body .chat-header .header-left {
+      display: inline-block; }
+    body .chat-header .header-middle {
+      display: inline-block; }
+    body .chat-header .header-right {
+      display: inline-block; }

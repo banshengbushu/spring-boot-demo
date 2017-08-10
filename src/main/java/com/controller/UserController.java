@@ -2,6 +2,7 @@ package com.controller;
 
 import com.model.User;
 import com.repository.UserRepository;
+import com.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -15,41 +16,36 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserRepository repository;
+    private UserService userService;
 
     @RequestMapping("/demo")
     @ResponseStatus(HttpStatus.OK)
     public ModelAndView getUsers(Model model) {
         ModelAndView modelAndView = new ModelAndView("demo");
-        List users = repository.findAll();
-        modelAndView.addObject("age", ((User) users.get(0)).age);
+        List<User> users = repository.findAll();
+        modelAndView.addObject("name", users.get(0).name);
         return modelAndView;
-    }
-
-    @RequestMapping("/chat")
-    @ResponseStatus(HttpStatus.OK)
-    public String home() {
-        return "chat";      ///if don't use thymeleaf??
     }
 
     @RequestMapping("/users/{id}")
     @ResponseStatus(HttpStatus.OK)
     public @ResponseBody
-    List<User> getUser(@RequestParam Integer id) {
-        String userId = id.toString();
-        return repository.findById(userId);
+    User getUser(@RequestParam String id) {
+        User user = userService.getUserById(id);
+        return user;
     }
 
     @RequestMapping("/users")
     @ResponseStatus(HttpStatus.OK)
     public @ResponseBody
-    Object getUser() {
-        List user = repository.findAll();
-        return user;
+    List<User> getUsers() {
+        List<User> users = repository.findAll();
+        return users;
     }
 
     @RequestMapping(value = "/users", method = RequestMethod.POST, produces = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
     public void addUser(@RequestBody User user) {
-        repository.save(user);
+        userService.addUser(user);
     }
 }

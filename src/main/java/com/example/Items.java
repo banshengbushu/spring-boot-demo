@@ -1,4 +1,4 @@
-package example;
+package com.example;
 
 import java.io.Serializable;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package example;
+package com.example;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +16,7 @@ public class ItemsController {
 
     @RequestMapping("/handleBars")
     public String handleBars() {
-        return "templates/handleBars.html";
+        return "handleBars.html";
     }
 
     @RequestMapping(value = "/items", method = RequestMethod.GET)

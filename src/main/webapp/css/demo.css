@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-size: 90%; }
   body .annulus {
@@ -55,3 +56,9 @@ body {
     border: 10px solid #9cf;
     border-radius: 50%;
     clip: rect(auto, 50px, auto, auto); }
+  body .line::after {
+    content: '';
+    border: solid 1px red; }
+  body .line::before {
+    content: '';
+    border: solid 1px red; }

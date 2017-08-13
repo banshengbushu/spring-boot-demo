@@ -8,12 +8,12 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 gulp.task('sass', function () {
-    return gulp.src('src/main/resources/templates/sass/*.scss')
+    return gulp.src('src/main/webapp/sass/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('src/main/resources/templates/css'));
+        .pipe(gulp.dest('src/main/webapp/css'));
 });
 
 gulp.task('sass:watch', function () {
-    gulp.watch('src/main/resources/templates/sass/*.scss', ['sass']);
+    gulp.watch('src/main/webapp/sass/*.scss', ['sass']);
 });
 

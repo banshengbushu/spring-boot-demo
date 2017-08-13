@@ -159,11 +159,11 @@ body {
     padding: 10px 0 40px 0;
 }
 
-.content .content-line {
+.content .content_line {
     margin: 60px 0;
 }
 
-.home_page .content .content-line h4 {
+.home_page .content .content_line h4 {
     display: inline;
     border: solid 1px #ccc;
     border-radius: 50%;
@@ -171,7 +171,7 @@ body {
     padding: 15px 19px;
 }
 
-.content .content-line .line::after {
+.content .content_line .line::after {
     content: '';
     border-top: solid 1px #cccccc;
     position: absolute;
@@ -180,16 +180,16 @@ body {
     clip: rect(auto, 295px, auto, 19px);
 }
 
-.content .content-line .line::before {
+.content .content_line .line::before {
     content: '';
     border-bottom: solid 1px white;
 }
 
-.content-items {
+.content_items {
     display: inline;
 }
 
-.content-items .items {
+.content_items .items {
     display: inline-block;
     list-style-type: none;
     max-width: 200px;
@@ -239,7 +239,7 @@ body {
     font-size: 1.2rem;
 }
 
-.content-icon .icon:focus {
+.content_icon .icon:focus {
     outline: none;
 }
 
@@ -255,7 +255,7 @@ body {
     display: inline-block;
 }
 
-.content-items.i.fa. {
+.content_items.i.fa. {
     font-size: 55px;
     opacity: 0.4;
 }
@@ -272,7 +272,7 @@ i.fa.fa-pencil, i.fa.fa-refresh, i.fa.fa-thumbs-up {
     color: #b900ff;
 }
 
-i.fa.fa-cycle, i.fa.fa-twitter, i.fa.fa-user, i.fa.fa-facebook {
+i.fa.fa-cycle, i.fa.fa-twitter, i.fa.fa-user, i.fa.fa-facebook, i.fa.fa-address-card {
     color: #0079ff;
 }
 
@@ -398,27 +398,27 @@ i.fa.fa-cycle, i.fa.fa-twitter, i.fa.fa-user, i.fa.fa-facebook {
     opacity: 1;
 }
 
-.link_nav .nav-items, .link_nav .nav-icons {
+.link_nav .nav_items, .link_nav .nav_icons {
     display: inline;
     list-style: none;
 }
 
-.nav-icons .fa.fa-twitter {
+.nav_icons .fa.fa-twitter {
     margin-right: 20px;
 }
 
-link_nav .nav-items {
+link_nav .nav_items {
     padding-left: 0px;
     margin-right: 600px;
 }
 
-.nav-items .item {
+.nav_items .item {
     display: inline-block;
     margin: 0 20px;
     opacity: 0.6;
 }
 
-.section_title::after {
+.content_title::after {
     position: absolute;
     content: '';
     border: solid 1px #cccccc;

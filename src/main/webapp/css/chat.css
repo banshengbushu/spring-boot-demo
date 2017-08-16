@@ -1,10 +1,149 @@
 body {
-  font-size: 79%; }
-  body .chat-header {
-    display: inline; }
-    body .chat-header .header-left {
-      display: inline-block; }
-    body .chat-header .header-middle {
-      display: inline-block; }
-    body .chat-header .header-right {
-      display: inline-block; }
+  font-size: 30px;
+  font-family: sans-serif; }
+  body .header {
+    background-color: white;
+    padding: 20px;
+    border-bottom: solid 1px #cccccc; }
+    body .header .header_message {
+      list-style: none;
+      display: inline;
+      font-size: 50%; }
+      body .header .header_message li {
+        display: inline-block;
+        border: solid 1px #cccccc;
+        border-radius: 50%;
+        margin-left: 10px;
+        padding: 10px; }
+      body .header .header_message li:first-child {
+        background-color: #81a8ca;
+        color: white; }
+    body .header .header_link {
+      display: inline-block;
+      font-size: 100%;
+      margin-left: 36%; }
+      body .header .header_link .fa-twitter {
+        color: #81a8ca; }
+    body .header .header_search {
+      display: inline-block;
+      float: right;
+      font-size: 50%; }
+      body .header .header_search .search_input {
+        display: inline-block;
+        border: solid 1px #cccccc;
+        padding: 8px;
+        border-radius: 50px; }
+        body .header .header_search .search_input input {
+          border: none; }
+  body .content {
+    background-color: #f2eee8;
+    display: inline-flex; }
+    body .content .content-leftSide {
+      background-color: #81a8ca;
+      width: 290px;
+      height: 873px;
+      color: white; }
+      body .content .content-leftSide .leftSide-description {
+        text-align: center; }
+        body .content .content-leftSide .leftSide-description .description-basic {
+          font-size: 12px;
+          margin: 0 20px 10px 20px; }
+          body .content .content-leftSide .leftSide-description .description-basic .basic_name {
+            font-size: 16px;
+            font-weight: bold; }
+          body .content .content-leftSide .leftSide-description .description-basic .basic_btn {
+            color: white;
+            padding: 15px;
+            background-color: #6d94b5;
+            width: 160px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 50px; }
+          body .content .content-leftSide .leftSide-description .description-basic .portrait-big {
+            margin-top: 60px; }
+          body .content .content-leftSide .leftSide-description .description-basic p {
+            font-size: 12px;
+            line-height: 1.5; }
+      body .content .content-leftSide .description-activites {
+        margin: 0 10px 0 20px; }
+        body .content .content-leftSide .description-activites h3 {
+          font-size: 18px; }
+        body .content .content-leftSide .description-activites ul {
+          list-style: none;
+          font-size: 16px; }
+          body .content .content-leftSide .description-activites ul li {
+            color: #6d94b5;
+            margin-bottom: 10px; }
+          body .content .content-leftSide .description-activites ul li a {
+            color: white;
+            margin-left: 10px; }
+    body .content .content-main {
+      display: inline; }
+      body .content .content-main .main-nav {
+        margin: 40px;
+        background-color: white; }
+        body .content .content-main .main-nav ul {
+          list-style: none;
+          display: inline; }
+          body .content .content-main .main-nav ul li {
+            display: inline-block;
+            text-align: center;
+            margin: 15px 0 15px 0;
+            padding: 0 105px; }
+            body .content .content-main .main-nav ul li p {
+              color: #cccccc;
+              font-size: 14px;
+              margin-top: 0;
+              margin-bottom: 0; }
+            body .content .content-main .main-nav ul li span {
+              color: #4d4d68;
+              font-size: 16px;
+              font-weight: bold; }
+      body .content .content-main .main-info {
+        font-size: 12px;
+        color: #8c8c8c;
+        background-color: white;
+        padding: 20px;
+        margin: 0 40px;
+        display: flex;
+        border-bottom: solid 1px #cccccc; }
+        body .content .content-main .main-info img {
+          display: inline-block; }
+        body .content .content-main .main-info .info {
+          display: inline-block;
+          margin-left: 20px; }
+          body .content .content-main .main-info .info embed {
+            width: 1200px;
+            height: 280px; }
+          body .content .content-main .main-info .info span {
+            font-size: 17px;
+            font-weight: bold;
+            color: black; }
+    body .content .content-rightSide {
+      background-color: white;
+      height: 873px;
+      width: 290px; }
+      body .content .content-rightSide .rightSide-follows {
+        margin-left: 30px; }
+        body .content .content-rightSide .rightSide-follows ul {
+          list-style: none;
+          display: inline; }
+          body .content .content-rightSide .rightSide-follows ul li span {
+            color: #cccccc; }
+          body .content .content-rightSide .rightSide-follows ul li h3 {
+            font-size: 18px; }
+          body .content .content-rightSide .rightSide-follows ul li a {
+            border: solid 1px #cccccc;
+            padding: 0 8px 0 8px;
+            margin-left: 50px; }
+          body .content .content-rightSide .rightSide-follows ul li .follow_introduce {
+            display: inline-block;
+            font-size: 14px; }
+  body .portrait-little {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px; }
+  body .portrait-big {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px; }

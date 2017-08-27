@@ -4,12 +4,14 @@ import com.model.User;
 import com.repository.UserRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class UserService {
-    private UserRepository repository;
+    public UserRepository repository;
 
     public UserService(UserRepository repository) {
         this.repository = repository;
